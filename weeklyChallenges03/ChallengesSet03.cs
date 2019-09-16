@@ -65,14 +65,31 @@ namespace WeeklyChallenges03
             return x;
             }
 
-            public int[] GetOddsBelow100()
+        public int[] GetOddsBelow100()
+        {
+            List<int> george = new List<int>();
+            for (int i = 0; i < 100; i++)
             {
-                throw new NotImplementedException();
+                if (i % 2 != 0)
+                {
+                    george.Add(i);
+                }
+                else
+                {
+                    continue;
+                }
             }
+            int[] paul = george.ToArray();
+            return paul;
+            ;
+        }
 
             public void ChangeAllElementsToUppercase(string[] words)
             {
-                throw new NotImplementedException();
+            for (int i = 0; i < words.Length; i++)
+            {
+                words[i] = words[i].ToUpper();
+            }
             }
 
     }
